@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Conversion EuroDollar</string>
+    <string name="euro">en euro</string>
+    <string name="dollar">en dollar</string>
+    <string name="calc">calculer</string>
+</resources>
