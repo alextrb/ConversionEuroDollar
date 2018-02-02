@@ -34,12 +34,14 @@ public class ConversionMonnaie extends AppCompatActivity {
                 }
 
                 float inputValue = Float.parseFloat(text.getText().toString());
+                // Creation du nouvel objet TextView qui permettra d'afficher les resultats
                 TextView text_results = new TextView(this);
 
 
                 if (euroButton.isChecked()) {
                     text.setText(String
                             .valueOf(convertDollarToEuro(inputValue)));
+                    // Change le texte affiche par la TextView
                     text_results.setText(String
                             .valueOf(convertDollarToEuro(inputValue)));
                     euroButton.setChecked(false);
@@ -52,6 +54,7 @@ public class ConversionMonnaie extends AppCompatActivity {
                     dollarButton.setChecked(false);
                     euroButton.setChecked(true);
                 }
+                // Rajoute l'element precedement cree et configuré au Linear_Layout
                 ll.addView(text_results);
                 break;
 

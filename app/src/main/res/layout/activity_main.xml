@@ -56,7 +56,6 @@
         </RadioGroup>
 
         <Button
-            
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -76,7 +75,7 @@
             android:id="@+id/precResults"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Résultats de la conversion" />
+            android:text="Résultats de la conversion :" />
 
     </LinearLayout>
 
