@@ -34,7 +34,6 @@ public class ConversionMonnaie extends AppCompatActivity {
                 }
 
                 float inputValue = Float.parseFloat(text.getText().toString());
-                LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT);
                 TextView text_results = new TextView(this);
 
 
@@ -49,16 +48,15 @@ public class ConversionMonnaie extends AppCompatActivity {
                     text.setText(String
                             .valueOf(convertEuroToDollar(inputValue)));
                     text_results.setText(String
-                            .valueOf(convertDollarToEuro(inputValue)));
+                            .valueOf(convertEuroToDollar(inputValue)));
                     dollarButton.setChecked(false);
                     euroButton.setChecked(true);
                 }
-                ll.addView(text_results, lp);
+                ll.addView(text_results);
                 break;
 
             case R.id.quit:
                 finish();
-                System.exit(0);
                 break;
 
         }
